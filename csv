@@ -1,0 +1,11 @@
+def retrive():
+    import csv
+    count="event_id"
+    count=input("enter the event_id you want to search:")
+    csv_file=csv.reader(open("anu.csv","r"))
+    for row in csv_file:
+        if count== row[3]:
+            print(row)
+retrive()            
+        
+    
